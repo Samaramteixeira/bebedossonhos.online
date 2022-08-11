@@ -107,6 +107,31 @@ setCookie('returningVisitor', 'yes', today)
 
 )
 
+delayDiv = document.getElementsByClassName('delay');
+
+window.pandascripttag = window.pandascripttag || [];
+window.pandascripttag.push(function (){
+  const player = new PandaPlayer('vid_62cf47c9eaa50b000ae3028', {
+        onReady: () => {
+            setInterval(() => {
+                tempoAtualSegundos =player.currentTime.toFixed(0);
+                if(tempoAtualSegundos >= tBotao){
+                    len = delayDiv.length;
+                    for(i=0;i < len;i++) {
+                        displayDelay = window.getComputedStyle(delayDiv[i]).getPropertyValue('display');
+                        
+                        if(displayDelay === 'none') {
+                            delayDiv[i].style.display = 'block';
+                            setInterval(vagasLimitadas, 20000);
+                        }
+                    }
+
+                }
+            }, 1000);
+      } 
+  })
+})
+
 function vagasLimitadas() {
 
     vagas = document.getElementById('vagas-disponiveis');
@@ -121,6 +146,5 @@ function vagasLimitadas() {
  }
 }    
 
-)
 
 
