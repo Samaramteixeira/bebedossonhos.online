@@ -119,5 +119,6 @@ function vagasLimitadas() {
     }else {
         vagas.innerHTML = 0;
  }
+}    
 
 
