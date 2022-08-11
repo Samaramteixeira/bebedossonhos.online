@@ -104,3 +104,20 @@ setTimeout(function() {
 var today = new Date()
 today.setDate(today.getFullYear() + 1)
 setCookie('returningVisitor', 'yes', today)
+
+)
+
+function vagasLimitadas() {
+
+    vagas = document.getElementById('vagas-disponiveis');
+
+    nVagas = parseInt(vagas.textContent);
+
+
+    if(nVagas >= 1) {
+        vagas.innerHTML = nVagas - 1;
+    }else {
+        vagas.innerHTML = 0;
+ }
+
+
