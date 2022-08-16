@@ -13,4 +13,4 @@ setTimeout(() => {
     }
     vagasRestantes -= 1;
   }, timer);
-}, 2000);
+}, 1105000);
