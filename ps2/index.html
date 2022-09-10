@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0572283b45.js"></script>
+    <title>Assistir ao Video</title>
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5Z4XPWN');</script>
+<!-- End Google Tag Manager -->
+
+    <style type="text/css">
+
+      nav {
+        background-color: #BF0A0A;
+        color: white;
+      }
+      .fsec {
+        background-color: #FCFCFC;
+      }
+      .fsec h1 {
+        color: #BF0A0A;
+      }
+      .fsec h4 {
+        color: #636E72;
+      }
+      .ssec {
+        background-color: #EEEEEE;
+      }
+      .btn {
+        font-size: 200%;
+        font-family: 'Oswald', sans-serif;
+        white-space: normal;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5Z4XPWN"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+    <nav class="navbar justify-content-center text-center">
+      <span class="lead">
+        <i class="fas fa-exclamation-triangle mr-2"></i>ATENÇÃO: Este vídeo será removido no dia <span id="dia"></span> de <span id="mes"></span>, aproveite enquanto está disponível!
+      </span>
+    </nav>
+
+    <section class="py-5 fsec">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-10 text-center">
+            <h1>O que REALMENTE faz o bebê <b>DORMIR A NOITE INTEIRA</b></h1>
+            <h4>Saiba como ter de volta noites de descanso na sua casa</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5 ssec">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-10 text-center">
+            <a href="https://bebedossonhos.online"><img class="img-fluid" src="play.png"></a>
+            <!-- TROQUE SEU LINK ONDE ESTÁ O DO PROTOCOLOZEROBARRIGA.COM, MANTENDO AS ASPAS -->
+            <a class="btn btn-success btn-lg p-4 mt-5" href="https://bebedossonhos.online">QUERO ASSISIR O VÍDEO AGORA!</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="py-4 bg-dark text-white">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col text-center">
+            <a href="https://bebedossonhos.online/termos" class="text-white font-weight-bold">Termos de Uso</a> | <a href="https://bebedossonhos.online/privacidade" class="text-white font-weight-bold">Política de Privacidade</a>
+            <p class="font-weight-bold">Copyright 2022 - Todos os Direitos Reservados</p>
+            <p>Este site não faz parte do site do Facebook ou Facebook Inc. Além disso,</p>
+            <p class="mb-0">Este site NÃO é endossado pelo Facebook de forma alguma. FACEBOOK é uma marca registrada da FACEBOOK, Inc.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script>
+      monName = new Array ("janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro")
+
+      var data = new Date();
+      var dia = data.getDate();
+      var mes = monName[data.getMonth()];
+
+      document.getElementById("dia").innerHTML = dia
+      document.getElementById("mes").innerHTML = mes
+    </script>
+  </body>
+</html>
